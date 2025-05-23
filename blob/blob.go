@@ -34,7 +34,7 @@
 // # OpenCensus Integration
 //
 // OpenCensus supports tracing and metric collection for multiple languages and
-// backend providers. See https://opencensus.io.
+// backend providers. See https://opencensus.io to get more information.
 //
 // This API collects OpenCensus traces and metrics for the following methods:
 //   - Attributes
@@ -61,7 +61,6 @@
 // https://opencensus.io/quickstart/go/tracing.
 // To enable metric collection in your application, see "Exporting stats" at
 // https://opencensus.io/quickstart/go/metrics.
-
 package blob // import "gocloud.dev/blob"
 
 import (
