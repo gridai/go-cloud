@@ -61,6 +61,7 @@
 // https://opencensus.io/quickstart/go/tracing.
 // To enable metric collection in your application, see "Exporting stats" at
 // https://opencensus.io/quickstart/go/metrics.
+
 package blob // import "gocloud.dev/blob"
 
 import (
