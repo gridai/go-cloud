@@ -871,7 +871,7 @@ func (b *bucket) Copy(ctx context.Context, dstKey, srcKey string, opts *driver.C
 		encodedTags := encodeTags(opts.Tags)
 		input.Tagging = aws.String(encodedTags)
 	}
-	
+
 	if opts.BeforeCopy != nil {
 		asFunc := func(i any) bool {
 			switch v := i.(type) {
