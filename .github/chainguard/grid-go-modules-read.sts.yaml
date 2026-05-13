@@ -1,0 +1,29 @@
+issuer: https://token.actions.githubusercontent.com
+# Used by gridai/grid CI to download this private repository as a Go module.
+# Keep this read-only; Grid exchanges one token per private module repository.
+subject_pattern: "repo:gridai/grid:(pull_request|ref:refs/heads/.*)"
+audience: octo-sts.gridai.dev
+claim_pattern:
+  workflow_ref: "gridai/grid/\\.github/workflows/(\
+    _test-studio-e2e\\.yml|\
+    _test-studio-e2e-staging\\.yml|\
+    build-and-upload-baremetal-agent\\.yml|\
+    build-and-upload-lightning-agent\\.yml|\
+    build-and-upload-lightning-settings-server\\.yml|\
+    build-dockers\\.yml|\
+    lint-go\\.yaml|\
+    lint-pre-commit\\.yaml|\
+    test-backend\\.yml|\
+    test-baremetal-agent\\.yml|\
+    test-e2e\\.yml|\
+    test-flakiness-go-unit-tests\\.yml|\
+    test-flakiness-individual-spec\\.yml|\
+    test-full-with-deploy\\.yml|\
+    test-sdk-integration\\.yml|\
+    test-sdk-staging\\.yml|\
+    test-staging\\.yml|\
+    test-with-tired-proxy\\.yml\
+    )@.*"
+
+permissions:
+  contents: read
